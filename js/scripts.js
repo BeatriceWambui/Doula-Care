@@ -13,7 +13,16 @@ function Person(first,last,age){
 
 //create a fullName prototype
 Person.prototype.fullName=function (){
-  this.firstName + this.lastName;
+   return this.firstName + this.lastName;
 }
-//form validation
+//create a month of pregnancy constructor
+function MonthOfP(currentM, inputtedM){
+  this.currentMonth=currentM,
+  this.inputtedMonth=inputtedM;
+}
+
+
+
+
+
 });
