@@ -4,4 +4,6 @@ font-family: 'Lacquer';
 .logo{
   width:700px;
   height: 400px;
+  position: absolute;
+  bottom:150px;
 }
