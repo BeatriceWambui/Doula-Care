@@ -6,6 +6,7 @@ $(document).ready(function(){
 $("form#form1").submit(function(event){
     var inputtedFirstName = $("input#firstName").val();
     var inputtedLastName =$("input#lastName").val();
+    var inputtedEmail =$("input#email").val();
     var inputtedDate=$("input#date").val();
     var inputtedAge = $("input#age").val();
     function validate(){
@@ -15,6 +16,8 @@ $("form#form1").submit(function(event){
             alert("Your age is below minimum [13]")
         }else if (inputtedAge >55) {
             alert("your age is above maximim [55]")
+        }else if (inputtedEmail ===""){
+            alert("please input your email")
         }else{
          return false;
         }
