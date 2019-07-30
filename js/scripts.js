@@ -8,13 +8,12 @@ var age;
 function Person(first,last,age){
   this.firstName=first,
   this.lastName=last,
-  this.age=age,
+  this.age=age;
 }
 
 //create a fullName prototype
 Person.prototype.fullName=function (){
   this.firstName + this.lastName;
 }
-
 //form validation
 });
