@@ -20,8 +20,10 @@ function MonthOfP(currentM, inputtedM){
   this.currentMonth=currentM,
   this.inputtedMonth=inputtedM;
 }
-
-
+//month of pregnancy prototype
+MonthOfP.prototype.getMonthOfPregnancy=function(){
+  return this.currentMonth - this.inputtedMonth;
+}
 
 
 
