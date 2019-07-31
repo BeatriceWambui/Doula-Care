@@ -69,9 +69,14 @@ $("form#form1").submit(function(event){
               function results(){
                 if(calculateBmi() <58){
                     alert("we need to work on your weight you are below minimum [58kgs]")
-                }else if(){}
-                    bmiCalculator();
-            }
+                }else if(calculateBmi() >90){
+                    alert("We need to work on your weight. You are above maximum [90kgs]")
+                }else{
+                    alert("your have a well balanced weight")
+                }
+                    
+                }
+                    results();
 })
 
 });
