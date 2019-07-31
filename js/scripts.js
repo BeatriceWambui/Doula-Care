@@ -14,7 +14,7 @@ function Person(first,last,age){
 
 //create a fullName prototype
 Person.prototype.fullName=function (){
-   return this.firstName + this.lastName;
+   return this.firstName +" "+ this.lastName;
 }
 //create a month of pregnancy constructor
 function MonthOfP(currentM, inputtedM){
@@ -28,7 +28,7 @@ MonthOfP.prototype.getMonthOfPregnancy=function(){
 
 
 
-// backend
+
  
 // form validation
 $("form#form1").submit(function(event){
@@ -52,6 +52,11 @@ $("form#form1").submit(function(event){
        
     }
     validate();
+//create an object for the user and get user,s full name
+var newUser=new Person(inputtedFirstName,inputtedLastName,inputtedAge);
+var userFullName=newUser.fullName();
+console.log(userFullName);
+
     
     event.preventDefault(); 
 });
