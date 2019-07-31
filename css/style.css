@@ -3,11 +3,11 @@ font-family: 'Lacquer';
 }
 
 .logo{
-  width:300px;
-  height: 200px;
+  width: 135px;
+  height: 105px;
   position: absolute;
-  bottom:370px;
-  left:1060px;
+  bottom: 213px;
+  left: 525px;
   border-radius: 50%;
 }
 
@@ -51,4 +51,23 @@ font-family: 'Lacquer';
     .navbar {
         background-color: #4285F4;
     }
+}
+.first{
+font-family: 'Poppins';
+}
+.second{
+  font-family: 'Poppins';
+}
+.third{
+  font-family: 'Poppins';
+}
+.fourth{
+  font-family: 'Poppins';
+}
+#form1{
+  font-family:"Roboto Mono";
+  font-weight:bold;
+}
+.text-center{
+  font-family:"Poppins";
 }
