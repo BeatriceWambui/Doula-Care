@@ -11,7 +11,7 @@ font-family: 'Lacquer';
 }
 
 .a {
-    background-image: url("https://www196.lunapic.com/do-not-link-here-use-hosting-instead/156449532470206885?5574768540");
+    background-image: url("../img/pregnant.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height:620px;
@@ -28,4 +28,26 @@ font-family: 'Lacquer';
     padding-top:3%;
     font-size: 40px;
     padding-bottom:10%;
+    background-color: transparent;
+}
+#form1{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 5%;
+}
+.container-fluid{
+    background-image: radial-gradient(circle, #e9e9e9, #09f5f5);
+}
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
 }
