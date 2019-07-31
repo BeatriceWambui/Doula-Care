@@ -1,9 +1,7 @@
-body {
+.a {
     background-image: url("https://www196.lunapic.com/do-not-link-here-use-hosting-instead/156449532470206885?5574768540");
     background-repeat: no-repeat;
     background-size: cover;
-}
-.a {
     text-align: center;
     padding-top: 25%;
     font-family: 'Milonga', cursive;
@@ -16,4 +14,13 @@ body {
     padding-top:3%;
     font-size: 40px;
     padding-bottom:10%;
+}
+.navbar-expand-lg {
+    background-color:transparent;
+}
+.mr-auto a:hover {
+    color: cadetblue;
+}
+.nav-link :hover {
+    background-color: cadetblue;
 }
