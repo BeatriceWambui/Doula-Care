@@ -58,25 +58,25 @@ $("form#form1").submit(function(event){
   var inputtedWeight;
   var inputtedHeight;
   
-    $("form#form2").submit(function(){
-        inputtedWeight = $("input#weight");
-        inputtedHeight = $("input#height");
+    $("form#form2").submit(function(event){
+        inputtedWeight = parseInt($("input#weight").val());
+        inputtedHeight = parseFloat($("input#height").val());
              function calculateBmi(){
-                return(inputtedWeight/(inputtedWeight*inputtedHeight));
-                 
+                return(inputtedWeight/(inputtedHeight*inputtedHeight));                 
              }
-             calculateBmi();
+            // alert(calculateBmi());
               function results(){
-                if(calculateBmi() <58){
-                    alert("we need to work on your weight you are below minimum [58kgs]")
-                }else if(calculateBmi() >90){
-                    alert("We need to work on your weight. You are above maximum [90kgs]")
+                if(calculateBmi() <19){
+                    $("ul#userDsetails2").append("<li> " + "Your bmi is " + calculateBmi() +". " + "we need to work on your weight you are below minimum [58kgs]<li>")
+                }else if(calculateBmi() >26){
+                    $("ul#userDsetails2").append("<li>" + "Your bmi is " + calculateBmi() +". " + "We need to work on your weight. You are above maximum [90kgs] <li>")
                 }else{
-                    alert("your have a well balanced weight")
+                    $("ul#userDsetails2").append("<li>" + "Your bmi is " + calculateBmi() +". " + "your have a well balanced weight<li>");
                 }
                     
                 }
                     results();
-})
+                    event.preventDefault();
 
+});
 });
