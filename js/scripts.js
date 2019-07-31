@@ -67,14 +67,16 @@ $("form#form1").submit(function(event){
             // alert(calculateBmi());
               function results(){
                 if(calculateBmi() <19){
-                    $("ul#userDsetails2").append("<li> " + "Your bmi is " + calculateBmi() +". " + "we need to work on your weight you are below minimum [58kgs]<li>")
+                    $("ul#userDsetails2").append("Your bmi is " + calculateBmi() +". " + "we need to work on your weight you are below minimum [58kgs]<li>")
                 }else if(calculateBmi() >26){
-                    $("ul#userDsetails2").append("<li>" + "Your bmi is " + calculateBmi() +". " + "We need to work on your weight. You are above maximum [90kgs] <li>")
+                    $("ul#userDsetails2").append("Your bmi is " + calculateBmi() +". " + "We need to work on your weight. You are above maximum [90kgs] <li>")
+                }else if(inputtedWeight && inputtedHeight ==""){
+                    alert("please fill in the BmI form")
                 }else{
-                    $("ul#userDsetails2").append("<li>" + "Your bmi is " + calculateBmi() +". " + "your have a well balanced weight<li>");
-                }
+                    $("ul#userDsetails2").append("Your bmi is " + calculateBmi() +". " + "your have a well balanced weight<li>");
+                };
                     
-                }
+                };
                     results();
                     event.preventDefault();
 
