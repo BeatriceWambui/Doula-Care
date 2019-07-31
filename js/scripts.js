@@ -71,8 +71,6 @@ $("form#form1").submit(function(event){
                     alert("Your BMI is " + calculateBmi() +". " + "We need to work on your weight you are below minimum [58kgs]")
                 }else if(calculateBmi() >26){
                     alert("Your BMI is " + calculateBmi() +". " + "We need to work on your weight. You are above maximum [90kgs]")
-                }else if(inputtedWeight && inputtedHeight ==""){
-                    alert("please fill in the BmI form")
                 }else{
                     alert("Your BMI is " + calculateBmi() +". " + "Your have a well balanced weight");
                 };
