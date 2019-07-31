@@ -103,14 +103,15 @@ var inputtedMonth= inputtedDate.getMonth()+1;
               calculateBmi();
               function results(){
                 if(calculateBmi() <19){
+
                     alert("Your BMI is " + calculateBmi() +". " + "We need to work on your weight you are below minimum [58kgs]")
                 }else if(calculateBmi() >26){
                     alert("Your BMI is " + calculateBmi() +". " + "We need to work on your weight. You are above maximum [90kgs]")
                 }else{
                     alert("Your BMI is " + calculateBmi() +". " + "Your have a well balanced weight");
-                }
+                };
                     //userDetails
-                }
+                };
                     results();
                     event.preventDefault();
 
@@ -154,7 +155,6 @@ var inputtedMonth= inputtedDate.getMonth()+1;
                 $(".fourthTri").hide();
                 $("#fourth").show();
             });
-            $("#")
-
+        
 });
 
