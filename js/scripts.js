@@ -73,7 +73,7 @@ $("form#form1").submit(function(event){
                 }else{
                     $("ul#userDsetails2").append("<li>" + "Your bmi is " + calculateBmi() +". " + "your have a well balanced weight<li>");
                 }
-                    
+                    //userDetails
                 }
                     results();
                     event.preventDefault();
