@@ -25,12 +25,17 @@ function MonthOfP(currentM, inputtedM){
 // backend
  
 // form validation
+var inputtedFirstName;
+var inputtedLastName;
+var inputtedEmail;
+var inputtedDate;
+var inputtedAge;
 $("form#form1").submit(function(event){
-    var inputtedFirstName = $("input#firstName").val();
-    var inputtedLastName =$("input#lastName").val();
-    var inputtedEmail =$("input#email").val();
-    var inputtedDate=$("input#date").val();
-    var inputtedAge = $("input#age").val();
+     inputtedFirstName = $("input#firstName").val();
+     inputtedLastName =$("input#lastName").val();
+     inputtedEmail =$("input#email").val();
+     inputtedDate=$("input#date").val();
+     inputtedAge = $("input#age").val();
     function validate(){
         if((inputtedFirstName || inputtedLastName) ===""){
             alert("please enter correct data on first and last name");
@@ -50,4 +55,28 @@ $("form#form1").submit(function(event){
     event.preventDefault(); 
 });
 
+  var inputtedWeight;
+  var inputtedHeight;
+  
+    $("form#form2").submit(function(event){
+        inputtedWeight = parseInt($("input#weight").val());
+        inputtedHeight = parseFloat($("input#height").val());
+             function calculateBmi(){
+                return(inputtedWeight/(inputtedHeight*inputtedHeight));                 
+             }
+            // alert(calculateBmi());
+              function results(){
+                if(calculateBmi() <19){
+                    $("ul#userDsetails2").append("<li> " + "Your bmi is " + calculateBmi() +". " + "we need to work on your weight you are below minimum [58kgs]<li>")
+                }else if(calculateBmi() >26){
+                    $("ul#userDsetails2").append("<li>" + "Your bmi is " + calculateBmi() +". " + "We need to work on your weight. You are above maximum [90kgs] <li>")
+                }else{
+                    $("ul#userDsetails2").append("<li>" + "Your bmi is " + calculateBmi() +". " + "your have a well balanced weight<li>");
+                }
+                    
+                }
+                    results();
+                    event.preventDefault();
+
+});
 });
