@@ -35,8 +35,9 @@ $("form#form1").submit(function(event){
     var inputtedFirstName = $("input#firstName").val();
     var inputtedLastName =$("input#lastName").val();
     var inputtedEmail =$("input#email").val();
-    var inputtedDate=$("input#date").val();
+    var inputtedDate=new Date($("input#date").val());
     var inputtedAge = $("input#age").val();
+   
     function validate(){
         if((inputtedFirstName || inputtedLastName) ===""){
             alert("please enter correct data on first and last name");
@@ -58,7 +59,25 @@ var userFullName=newUser.fullName();
 console.log(userFullName);
 
 
-    
+var inputtedMonth= inputtedDate.getMonth()+1;
+ var currentDate= new Date();
+ var currentMonth= currentDate.getMonth()+1;
+  var newMonthOfP= new MonthOfP(currentMonth,inputtedMonth);
+  var pregnancyPeriod=newMonthOfP.getMonthOfPregnancy();
+//  console.log(currentMonth);
+ console.log( "Congratulations "+ userFullName + "You are  " + pregnancyPeriod + " months pregnant");
+ function getSemester(){
+  if(pregnancyPeriod<4){
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  first Timester " + " </span></li>");
+  }else if(pregnancyPeriod<6 && pregnancyPeriod >4){
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  second Timester " + " </span></li>");
+  }else if(pregnancyPeriod >6 && pregnancyPeriod <9){
+    console.log("Third trisem")
+  } else {
+    console.log("If you've recoverd after delivary, you are free to go");
+  }
+ } 
+    getSemester();
     event.preventDefault(); 
 });
 
