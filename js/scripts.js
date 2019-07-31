@@ -67,17 +67,22 @@ var inputtedMonth= inputtedDate.getMonth()+1;
 //  console.log(currentMonth);
  console.log( "Congratulations "+ userFullName + "You are  " + pregnancyPeriod + " months pregnant");
  function getSemester(){
+  $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ userFullName + "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
   if(pregnancyPeriod<4){
     $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  first Trimester " + " </span></li>");
+    $(".firstTriCol").show();
   }else if(pregnancyPeriod<6 && pregnancyPeriod >4){
     $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  second Trimester " + " </span></li>");
+    $(".secondTriCol").show();
   }else if(pregnancyPeriod >6 && pregnancyPeriod <9){
-    $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  thirdd Trimester " + " </span></li>");
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  third= Trimester " + " </span></li>");
+    $(".thirdTriCol").show();
   } else {
     $("ul#userDetails").append("<li><span class='userInfo'>" +"If you've recoverd after delivary, you are good to go " + " </span></li>");
   }
  } 
     getSemester();
+
     event.preventDefault(); 
 });
 
