@@ -79,4 +79,43 @@ $("form#form1").submit(function(event){
                     event.preventDefault();
 
 });
+// first trimester
+            $("#first").click(function(){
+                $("#first").hide();
+                $(".firsTri").show();
+            });
+            $(".firsTri").click(function(){
+                $("#first").show(); 
+                $(".firsTri").hide();
+               
+            });
+//second trimester
+            $("#second").click(function(){
+                $("#second").hide();
+                $(". secondTri").show();
+            });
+            $(".secondRow").click(function(){
+                $("#second").show();
+                $(".secondRow").hide();
+                
+            });
+//third trimester
+            $("#third").click(function(){
+                $("#third").hide();
+                $(".thirdTri").show();
+            });
+            $(".thirdTri").click(function(){
+                $("#third").show();
+                $(".thirdTri").hide();
+                
+            });
+// fourth trimester
+            $("#fourth").click(function(){
+                $("#fourth").hide();
+                $(".fourthTri").show();
+            });
+            $(".fourthTri").click(function(){
+                $(".fourthTri").hide();
+                $("#fourth").show();
+            })
 });
