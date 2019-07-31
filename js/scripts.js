@@ -64,21 +64,63 @@ $("form#form1").submit(function(event){
              function calculateBmi(){
                 return(inputtedWeight/(inputtedHeight*inputtedHeight));                 
              }
-            // alert(calculateBmi());
+              calculateBmi();
               function results(){
                 if(calculateBmi() <19){
-                    $("ul#userDsetails2").append("Your bmi is " + calculateBmi() +". " + "we need to work on your weight you are below minimum [58kgs]<li>")
+
+                    alert("Your BMI is " + calculateBmi() +". " + "We need to work on your weight you are below minimum [58kgs]")
                 }else if(calculateBmi() >26){
-                    $("ul#userDsetails2").append("Your bmi is " + calculateBmi() +". " + "We need to work on your weight. You are above maximum [90kgs] <li>")
+                    alert("Your BMI is " + calculateBmi() +". " + "We need to work on your weight. You are above maximum [90kgs]")
                 }else if(inputtedWeight && inputtedHeight ==""){
                     alert("please fill in the BmI form")
                 }else{
-                    $("ul#userDsetails2").append("Your bmi is " + calculateBmi() +". " + "your have a well balanced weight<li>");
+                    alert("Your BMI is " + calculateBmi() +". " + "Your have a well balanced weight");
                 };
-                    
+                    //userDetails
                 };
                     results();
                     event.preventDefault();
 
 });
+// first trimester
+            $("#first").click(function(){
+                $("#first").hide();
+                $(".firsTri").show();
+            });
+            $(".firsTri").click(function(){
+                $("#first").show(); 
+                $(".firsTri").hide();
+               
+            });
+//second trimester
+            $("#second").click(function(){
+                $("#second").hide();
+                $(". secondTri").show();
+            });
+            $(".secondRow").click(function(){
+                $("#second").show();
+                $(".secondRow").hide();
+                
+            });
+//third trimester
+            $("#third").click(function(){
+                $("#third").hide();
+                $(".thirdTri").show();
+            });
+            $(".thirdTri").click(function(){
+                $("#third").show();
+                $(".thirdTri").hide();
+                
+            });
+// fourth trimester
+            $("#fourth").click(function(){
+                $("#fourth").hide();
+                $(".fourthTri").show();
+            });
+            $(".fourthTri").click(function(){
+                $(".fourthTri").hide();
+                $("#fourth").show();
+            });
+        
 });
+
