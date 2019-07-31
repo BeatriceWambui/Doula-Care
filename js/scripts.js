@@ -14,15 +14,21 @@ function Person(first,last,age){
 
 //create a fullName prototype
 Person.prototype.fullName=function (){
-   return this.firstName + this.lastName;
+   return this.firstName +" "+ this.lastName;
 }
 //create a month of pregnancy constructor
 function MonthOfP(currentM, inputtedM){
   this.currentMonth=currentM,
   this.inputtedMonth=inputtedM;
 }
+//month of pregnancy prototype
+MonthOfP.prototype.getMonthOfPregnancy=function(){
+  return this.currentMonth - this.inputtedMonth;
+}
 
-// backend
+
+
+
  
 // form validation
 var inputtedFirstName;
@@ -31,11 +37,12 @@ var inputtedEmail;
 var inputtedDate;
 var inputtedAge;
 $("form#form1").submit(function(event){
-     inputtedFirstName = $("input#firstName").val();
-     inputtedLastName =$("input#lastName").val();
-     inputtedEmail =$("input#email").val();
-     inputtedDate=$("input#date").val();
-     inputtedAge = $("input#age").val();
+    var inputtedFirstName = $("input#firstName").val();
+    var inputtedLastName =$("input#lastName").val();
+    var inputtedEmail =$("input#email").val();
+    var inputtedDate=new Date($("input#date").val());
+    var inputtedAge = $("input#age").val();
+   
     function validate(){
         if((inputtedFirstName || inputtedLastName) ===""){
             alert("please enter correct data on first and last name");
@@ -51,7 +58,36 @@ $("form#form1").submit(function(event){
        
     }
     validate();
-    
+//create an object for the user and get user,s full name
+var newUser=new Person(inputtedFirstName,inputtedLastName,inputtedAge);
+var userFullName=newUser.fullName();
+console.log(userFullName);
+
+
+var inputtedMonth= inputtedDate.getMonth()+1;
+ var currentDate= new Date();
+ var currentMonth= currentDate.getMonth()+1;
+  var newMonthOfP= new MonthOfP(currentMonth,inputtedMonth);
+  var pregnancyPeriod=newMonthOfP.getMonthOfPregnancy();
+//  console.log(currentMonth);
+ console.log( "Congratulations "+ userFullName + "You are  " + pregnancyPeriod + " months pregnant");
+ function getSemester(){
+  $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ userFullName + "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
+  if(pregnancyPeriod<4){
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  first Trimester " + " </span></li>");
+    $(".firstTriCol").show();
+  }else if(pregnancyPeriod<6 && pregnancyPeriod >4){
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  second Trimester " + " </span></li>");
+    $(".secondTriCol").show();
+  }else if(pregnancyPeriod >6 && pregnancyPeriod <9){
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  third= Trimester " + " </span></li>");
+    $(".thirdTriCol").show();
+  } else {
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"If you've recoverd after delivary, you are good to go " + " </span></li>");
+  }
+ } 
+    getSemester();
+
     event.preventDefault(); 
 });
 
