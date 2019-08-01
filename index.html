@@ -15,241 +15,273 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Milonga&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
   <div class="container-fluid">
-    <!-- landingpage -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-      <a class="navbar-brand" href="#"><strong>DOULA CARE</strong></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          <li class="nav-item">
-            <a class="nav-link" href="#contactus">Contact us</a>
-          </li>
-        </ul>
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+          <a class="navbar-brand" href="#"><strong>DOULA CARE</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactus">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="a">
+          <h1>DOULA CARE</h1>
+          <p>Wondering what to expect from the time you get pregnant?</p>
+          <img class="logo" src="img/baby.logo.png">
+        </div>
+        <!-- Large input -->
+          <h2>WELCOME FORM</h2>
+            <form action="" id="form1">
+                <label for="firstName">First Name</label>
+                <input class="form-control form-control-lg" type="text" placeholder="input your first name" id="firstName">
+                <br><br>
+                <label for="lastName">Last Name</label>
+                <input class="form-control form-control-lg" type="text" placeholder="input your second name" id="lastName">
+                <br><br>
+                <!-- Material input -->
+                <div class="md-form">
+                  <i class="fas fa-user prefix"></i>
+                  <input type="email" id="inputIconEx2" class="form-control">
+                  <label for="inputIconEx2">E-mail address</label>
+                </div><br>
+                <label for="date">Date of pregnancy</label>
+                <input type="date" placeholder="choose date" required id="date"><br><br>
+                <label for="age">Age</label>
+                <input class="form-control form-control-lg" type="number" placeholder="enter your age" id="age">
+                <br><br>
+                <div class="output">
+                  <ul id="userDetails">
+        
+                  </ul>
+                </div>
+                <input type="submit">
+        
+              </form>
+        
+
+    <div id="section2">
+      <div class="text-center" id="aboutus">
+        <h1>ABOUT US</h1>
+        <p>Most women have a problem coping up with life changes during and after <br>
+          pregnancy .The proposed application is aimed at helping Pre and Post natal <br>
+          mothers to monitor their babies growth throughout the whole trimester and a <br>
+          few months after.</p>
       </div>
-    </nav>
-    <div class="a">
-      <h1>DOULA CARE</h1>
-      <p>Wondering what to expect from the time you get pregnant?</p>
-      <img class="logo" src="img/baby.logo.png">
+  </div>
+
+    <div class="text-center" id="services">
+      <h1>SERVICES</h1>
     </div>
-    <!-- Large input -->
-      <div class="container-fluid">
+    <div class="myfirst">
+      <div class="row row1">
+        <figure>
+          <img src="img/firsttrimester.png" class="img-fluid" id="first" alt=""><br>
+          <figcaption class="text-center" id="first-h"><strong>First Trimester</strong></figcaption>
+        </figure>
+      </div>
+      <div class="row firsTri">
+        <div class="col-sm-4 firstTriCol">    
+            <h2>(1-3)months</h2>
+          <p><strong>signs & symptoms:</strong></p>
+          <ul>
+            <li>nausea and vomiting</li>
+            <li>cravings and aversion</li>
+            <li>heightened sense of smell</li>
+            <li>mood swings</li>
+          </ul>
 
-        <div id="section2">
-            <div class="text-center">
-              <h1>ABOUT US</h1>
-              <p>Most women have a problem coping up with life changes during and after <br>
-                pregnancy .The proposed application is aimed at helping Pre and Post natal <br>
-                mothers to monitor their babies growth throughout the whole trimester and a <br>
-                few months after.</p>
-            </div>
-          </div><br><br>  
+        </div>
+        <div class="col-sm-4 firstTriCol">
+          <br>
+          <p><strong>fetal development</strong></p>
+          <ul>
+            <li>fertilization</li>
+            <li>implantation</li>
+            <li>hormone levels increase</li>
+            <li>the neural tube closes</li>
+            <li>baby's head develops</li>
+            <li>baby's nose forms</li>
+            <li>baby's toes appear</li>
+            <li>baby's elbow bends</li>
+            <li>baby's genitals develop</li>
+            <li>baby's fingernails form</li>
+          </ul>
 
-      <form action="" id="form1">
-        <label for="firstName">First Name</label>
-        <input class="form-control form-control-lg" type="text" placeholder="input your first name" id="firstName">
-        <br><br>
-        <label for="lastName">Last Name</label>
-        <input class="form-control form-control-lg" type="text" placeholder="input your second name" id="lastName">
-        <br><br>
-        <!-- Material input -->
-        <div class="md-form">
-          <i class="fas fa-user prefix"></i>
-          <input type="email" id="inputIconEx2" class="form-control">
-          <label for="inputIconEx2">E-mail address</label>
-        </div><br>
-        <label for="date">Date of pregnancy</label>
-        <input type="date" placeholder="choose date" required id="date"><br><br>
-        <label for="age">Age</label>
-        <input class="form-control form-control-lg" type="number" placeholder="enter your age" id="age">
-        <br><br>
-        <div class="output">
-          <ul id="userDetails">
+        </div>
+        <div class="col-sm-4 firstTriCol">
+          <br>
 
+          <p><strong>activities to be done:</strong></p>
+          <ul>
+            <li>Make sure you're really pregnant</li>
+            <li>Take your prenatal vitamin</li>
+            <li>Investigate health insurance</li>
+            <li>Choose a healthcare provider</li>
+            <li>Make a prenatal appointment</li>
+            <li>Consult your provider about medications you're taking</li>
+            <li>If you smoke or take alcohol, quit</li>
+            <li>Cut down on caffeine</li>
+            <li>Make sure your activities are pregnancy-safe</li>
+            <li>Do your best to eat well</li>
+            <li>Learn the signs of a pregnancy problem</li>
           </ul>
         </div>
-        <input type="submit">
-
-      </form>
-
-
-
-      <!-- Start your project here-->
-
-
-      <!-- landing page -->
-
-     
-
-      <!-- form -->
-
-      <div class="row">
-        <div class="col-sm-3 firstTri">
-          <img src="img/firsttrimester.png" class="img-fluid" alt="">
-          <h2>First Trimester</h2>
-          <div class="first">
-            <h2>(1-3)months</h2>
-            <p><strong>signs & symptoms:</strong></p>
-            <ul>
-              <li>nausea and vomiting</li>
-              <li>cravings and aversion</li>
-              <li>heightened sense of smell</li>
-              <li>mood swings</li>
-            </ul>
-            <p><strong>fetal development</strong></p>
-            <ul>
-              <li>fertilization</li>
-              <li>implantation</li>
-              <li>hormone levels increase</li>
-              <li>the neural tube closes</li>
-              <li>baby's head develops</li>
-              <li>baby's nose forms</li>
-              <li>baby's toes appear</li>
-              <li>baby's elbow bends</li>
-              <li>baby's genitals develop</li>
-              <li>baby's fingernails form</li>
-            </ul>
-            <p><strong>activities to be done:</strong></p>
-            <ul>
-              <li>Make sure you're really pregnant</li>
-              <li>Take your prenatal vitamin</li>
-              <li>Investigate health insurance</li>
-              <li>Choose a healthcare provider</li>
-              <li>Make a prenatal appointment</li>
-              <li>Consult your provider about medications you're taking</li>
-              <li>If you smoke or take alcohol, quit</li>
-              <li>Cut down on caffeine</li>
-              <li>Make sure your activities are pregnancy-safe</li>
-              <li>Do your best to eat well</li>
-              <li>Learn the signs of a pregnancy problem</li>
-            </ul>
-          </div>
+      </div>
+   
+     <div class="mysecond">
+      <div class="row row2">
+        <figure>
+          <img src="img/second trimester.jpg" id="second" class="img-fluid" alt="">
+          <figcaption class="text-center" id="second-h"><strong>Second Trimester</strong></figcaption>
+        </figure>
+      </div>
+      <div class=" row secondTri">
+        <div class="col-sm-4 secondTriCol">
+          <h2>(4-6)months</h2>
+          <p><strong>signs & symptoms:</strong></p>
+          <ul>
+            <li>round ligament pains</li>
+            <li>nipple changes</li>
+            <li>stretch marks</li>
+            <li>feeling the baby moving</li>
+          </ul>
         </div>
-        <div class="col-sm-3 secondTri">
-          <img src="img/second trimester.jpg" class="img-fluid" alt="">
-          <h2>Second Trimester</h2>
-          <div class="second">
-            <h2>(4-6)months</h2>
-            <p><strong>signs & symptoms:</strong></p>
-            <ul>
-              <li>round ligament pains</li>
-              <li>nipple changes</li>
-              <li>stretch marks</li>
-              <li>feeling the baby moving</li>
-            </ul>
-            <p><strong>fetal development</strong></p>
-            <ul>
-              <li>Urine forms</li>
-              <li>Baby's sex becoming apparent</li>
-              <li>Baby's scalp pattern develops</li>
-              <li>Baby's eyes move</li>
-              <li>Baby's toenails develop</li>
-              <li>Baby begins to hear</li>
-              <li>Baby develops protective coating</li>
-              <li>Baby can suck his or her thumb</li>
-              <li>Baby's hair becomes visible</li>
-              <li>Fingerprints and footprints form</li>
-              <li>Baby's skin is wrinkled</li>
-              <li>Baby responds to your voice</li>
-              <li>Baby's lungs develop</li>
-            </ul>
-            <p><strong>activities to be done:</strong></p>
-            <ul>
-              <li>Find a prenatal exercise class</li>
-              <li>Learn about second-trimester prenatal visits and tests</li>
-              <li>Start shopping for maternity clothes</li>
-              <li>Decide whether to hire a professional labor coach (doula)</li>
-              <li>Start moisturizing your belly</li>
-              <li>Prepare your older children</li>
-              <li>Start sleeping on your side</li>
-              <li>Start doing Kegel exercises</li>
-              <li>Avoid unsafe activities</li>
-            </ul>
-          </div>
+        <div class="col-sm-4 secondTriCol">
+          <p><strong>fetal development</strong></p>
+          <ul>
+            <li>Urine forms</li>
+            <li>Baby's sex becoming apparent</li>
+            <li>Baby's scalp pattern develops</li>
+            <li>Baby's eyes move</li>
+            <li>Baby's toenails develop</li>
+            <li>Baby begins to hear</li>
+            <li>Baby develops protective coating</li>
+            <li>Baby can suck his or her thumb</li>
+            <li>Baby's hair becomes visible</li>
+            <li>Fingerprints and footprints form</li>
+            <li>Baby's skin is wrinkled</li>
+            <li>Baby responds to your voice</li>
+            <li>Baby's lungs develop</li>
+          </ul>
         </div>
-        <div class="col-sm-3 thirdTri">
-          <img src="img/thirdtrimester.jpg" class="img-fluid" alt="">
-          <h2>Third Trimester</h2>
-          <div class="third">
-            <h2>(7-9)months</h2>
-            <p><strong>signs & symptoms:</strong></p>
-            <ul>
-              <li>strong kicks from the baby</li>
-              <li>swollen feet</li>
-              <li>leaking from the breasts</li>
-              <li>frequent urination</li>
-            </ul>
-            <p><strong>fetal development</strong></p>
-            <ul>
-              <li>Baby's eyes partially open</li>
-              <li>Baby kicks and stretches</li>
-              <li>Baby's hair grows</li>
-              <li>Baby's rapid weight gain begins</li>
-              <li>Baby practices breathing</li>
-              <li>Baby detects light</li>
-              <li>Baby's fingernails grow</li>
-              <li>Baby's skin is pink and smooth</li>
-              <li>Baby takes up most of the amniotic sac</li>
-              <li>Baby might turn head first</li>
-              <li> Baby's toenails grow</li>
-              <li>Baby's chest is prominent</li>
-              <li>Your due date arrives</li>
-            </ul>
-            <p><strong>activities to be done:</strong></p>
-            <ul>
-              <li>Pick out Baby's going-home outfit and wash it</li>
-              <li>Find a pediatrician</li>
-              <li>Pack your hospital bag</li>
-              <li>Learn how to use your baby carrier or wrap and stroller</li>
-            </ul>
-          </div>
+        <div class="col-sm-4 secondTriCol">
+          <p><strong>activities to be done:</strong></p>
+          <ul>
+            <li>Find a prenatal exercise class</li>
+            <li>Learn about second-trimester prenatal visits and tests</li>
+            <li>Start shopping for maternity clothes</li>
+            <li>Decide whether to hire a professional labor coach (doula)</li>
+            <li>Start moisturizing your belly</li>
+            <li>Prepare your older children</li>
+            <li>Start sleeping on your side</li>
+            <li>Start doing Kegel exercises</li>
+            <li>Avoid unsafe activities</li>
+          </ul>
         </div>
-        <div class="col-sm-3 fourthTri">
-          <img src="img/fourthtrimester.jpg" id="" class="img-fluid" alt="">
-          <h2>Fourth Trimester</h2>
-          <div class="fourth">
-            <h2>(The baby's first 3 months)</h2>
-            <p><strong>signs & symptoms:</strong></p>
-            <ul>
-              <li>lochia</li>
-              <li>fatigue</li>
-              <li>sore,leaking breasts</li>
-              <li>"baby blues"</li>
-              <li>risk of postpartum depression</li>
-            </ul>
-            <p><strong>activities to be done:</strong></p>
-            <ul>
-              <li>holding the baby close</li>
-              <li>gently swaying or rocking the baby</li>
-              <li>making swishing or shushing noises</li>
-              <li>swaddling</li>
-              <li>giving the baby opportunities to suck, either during breastfeeding or by using a pacifier</li>
-            </ul>
-          </div>
+      </div>
+    </div>
+    <div class="mythird">
+      <div class="row row3" >
+        <figure>
+          <img src="img/thirdtrimester.jpg" id="third" class="img-fluid" alt="">
+          <figcaption class="text-center" id="third-h"><strong>Third Trimester</strong></figcaption>
+        </figure>
+      </div>
+      <div class="row thirdTri">
+        <div class="col-sm-4 thirdTriCol">
+          <h2>(7-9)months</h2>
+          <p><strong>signs & symptoms:</strong></p>
+          <ul>
+            <li>strong kicks from the baby</li>
+            <li>swollen feet</li>
+            <li>leaking from the breasts</li>
+            <li>frequent urination</li>
+          </ul>
         </div>
-
-      </div><br><br>
-      <h2>BMI FORM</h2><br>
+        <div class="col-sm-4 thirdTriCol">
+          <p><strong>fetal development</strong></p>
+          <ul>
+            <li>Baby's eyes partially open</li>
+            <li>Baby kicks and stretches</li>
+            <li>Baby's hair grows</li>
+            <li>Baby's rapid weight gain begins</li>
+            <li>Baby practices breathing</li>
+            <li>Baby detects light</li>
+            <li>Baby's fingernails grow</li>
+            <li>Baby's skin is pink and smooth</li>
+            <li>Baby takes up most of the amniotic sac</li>
+            <li>Baby might turn head first</li>
+            <li> Baby's toenails grow</li>
+            <li>Baby's chest is prominent</li>
+            <li>Your due date arrives</li>
+          </ul>
+        </div>
+        <div class="col-sm-4 thirdTriCol">
+          <p><strong>activities to be done:</strong></p>
+          <ul>
+            <li>Pick out Baby's going-home outfit and wash it</li>
+            <li>Find a pediatrician</li>
+            <li>Pack your hospital bag</li>
+            <li>Learn how to use your baby carrier or wrap and stroller</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="myfourth">
+      <div class="row row4">
+        <figure>
+          <img src="img/fourthtrimester.jpg" id="fourth" class="img-fluid" alt="">
+          <figcaption id="fourth-h" class="text-center"><strong>Fourth Trimester</strong></figcaption>
+        </figure>
+      </div>
+      <div class="row fourthTri">
+        <div class="col-sm-6 fourthTriCol">
+          <h2>(The baby's first 3 months)</h2>
+          <p><strong>signs & symptoms:</strong></p>
+          <ul>
+            <li>lochia</li>
+            <li>fatigue</li>
+            <li>sore,leaking breasts</li>
+            <li>"baby blues"</li>
+            <li>risk of postpartum depression</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 fourthTriCol">
+          <p><strong>activities to be done:</strong></p>
+          <ul>
+            <li>holding the baby close</li>
+            <li>gently swaying or rocking the baby</li>
+            <li>making swishing or shushing noises</li>
+            <li>swaddling</li>
+            <li>giving the baby opportunities to suck, either during breastfeeding or by using a pacifier</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- bmiform -->
+    <h2>BMI FORM</h2><br>
       <div class="row">
         <form action="" id="form2">
             <label for="kilograms">Weight in kilograms</label>
-            <input type="number" class="form-control" name="weight" id="weight" value="" max="5"><br>
+            <input type="number" class="form-control" name="weight" id="weight" value="" ><br>
 
           <label for="height">Height in meters</label>
           <input type="float" class="form-control" name="height" id="height" value="" ><br>
@@ -262,10 +294,8 @@
 
           <input type="submit" value="Calculate" id="calc"> <input type="reset" value="Reset">
         </form>
-        </div><br><br>
-      <!-- <a href="index.htm">Back to examples</a> -->
+      </div><br><br>
 
-      </div>
     <!--Section: Contact v.2-->
     <section class="mb-4">
 
@@ -364,14 +394,11 @@
 
     </section>
     <!--Section: Contact v.2-->
-    </div>
   </div>
-</div>
-
-  <!-- Start your project here-->
+</div> 
 
   <!-- SCRIPTS -->
-  <!-- JQuery -->
+  <!-- JQuery --> 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script src="js/scripts.js"></script>
   <!-- Bootstrap tooltips -->
@@ -381,6 +408,4 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
-
-
 </html>
