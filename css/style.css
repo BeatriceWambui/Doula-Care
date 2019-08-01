@@ -78,6 +78,8 @@
 h2{
   text-align: center;
   text-decoration: underline;
+  font-family: 'Milonga', cursive;
+  padding-top: 30px;
 }
 #form1{
   padding-left: 100px;
@@ -105,3 +107,15 @@ font-weight:bold;
 .text-center{
 font-family:"Poppins";
 }
+#fertile {
+  justify-content: center;
+}
+.col-sm-4 secondTriCol {
+  display: flex;
+  font-size: 60px;
+  text-align: center;
+}
+.row first-child{
+  margin-top: 20px;
+}
+
