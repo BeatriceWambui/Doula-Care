@@ -62,31 +62,47 @@ $("form#form1").submit(function(event){
 var newUser=new Person(inputtedFirstName,inputtedLastName,inputtedAge);
 var userFullName=newUser.fullName();
 console.log(userFullName);
-
+color:;
 
 var inputtedMonth= inputtedDate.getMonth()+1;
  var currentDate= new Date();
  var currentMonth= currentDate.getMonth()+1;
   var newMonthOfP= new MonthOfP(currentMonth,inputtedMonth);
   var pregnancyPeriod=newMonthOfP.getMonthOfPregnancy();
+  var userGender=$("input[name='gender']:checked").val();
 //  console.log(currentMonth);
+
  console.log( "Congratulations "+ userFullName + "You are  " + pregnancyPeriod + " months pregnant");
+ //function genderDetermine
+ function genderDetermine(){
+   if(userGender==="male"){
+    $("h1#userN").after("Dear "+ userFullName);
+    $("ul#userDetails").append("<li><span class='userInfo'>" + "Males don't get pregnant!")
+   }else{
+     getSemester()
+   }
+ }
+ genderDetermine();
  function getSemester(){
-  $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ userFullName + "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
-  if(pregnancyPeriod<4){
-    $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  first Trimester " + " </span></li>");
+   $("h1#userN").after("Dear "+ userFullName);
+  $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
+  if(pregnancyPeriod>=0 && pregnancyPeriod<=4){
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  first semester " + " </span></li>");
     $(".firstTriCol").show();
-  }else if(pregnancyPeriod<6 && pregnancyPeriod >4){
+  }else if(pregnancyPeriod<=6 && pregnancyPeriod >4){
     $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  second Trimester " + " </span></li>");
     $(".secondTriCol").show();
-  }else if(pregnancyPeriod >6 && pregnancyPeriod <9){
-    $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  third= Trimester " + " </span></li>");
+  }else if(pregnancyPeriod >6 && pregnancyPeriod <=9){
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  first semester  " + " </span></li>");
     $(".thirdTriCol").show();
+  }else if (pregnancyPeriod>9 && pregnancyPeriod<=12){
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  fourth semester  " + " </span></li>");
+    $(".fourthTriCol").show();
   } else {
     $("ul#userDetails").append("<li><span class='userInfo'>" +"If you've recoverd after delivary, you are good to go " + " </span></li>");
   }
  } 
-    getSemester();
+    // getSemester();
 
     event.preventDefault(); 
 });
