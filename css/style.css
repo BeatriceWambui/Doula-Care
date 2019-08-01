@@ -12,12 +12,13 @@
 
 .a {
     background-image: url("../img/pregnant.jpg");
+   
     background-repeat: no-repeat;
-    background-size: cover;
     height:620px;
     width:100%;
-    text-align: center;
-    padding-top: 25%;
+    text-align:center;
+    background-size: cover;
+    padding-top: 25%; 
     font-family: 'Milonga', cursive;
     color:rgba(63, 230, 152, 0.74); 
 }
@@ -27,6 +28,7 @@
       width:100%;  
   }
 }
+
 
 .a h1{
   font-size: 130px;
@@ -118,4 +120,12 @@ font-family:"Poppins";
 .row first-child{
   margin-top: 20px;
 }
-
+.container-fluid {
+  width: 50%;
+  height: auto;
+}
+.output2 {
+  width: 50%;
+  margin: auto;
+  background: white;
+}
