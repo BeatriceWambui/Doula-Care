@@ -129,9 +129,40 @@ var inputtedMonth= inputtedDate.getMonth()+1;
                     //userDetails
                 };
                     results();
-                    event.preventDefault();
+                    event.preventDefault(); 
 
 });
+//Validate contact form
+$('form#contact-form').submit(function(event){
+  
+  var reachOutName= $("input#name").val();
+  var reachOutSubject=$("input#subject").val();
+  var reachOutMessage=$("textarea#message").val();
+  var userEmail=$("input#email").val();
+  function validateCForm(){
+    if(reachOutName===""){
+      $("h1#validInfo").fadeIn(1000);
+      $("h1#validInfo").fadeOut(1000);
+      // $(this).remove();
+    }else if(userEmail===""){
+      $("h1#validInfo1").fadeIn(1000);
+      $("h1#validInfo1").fadeOut(1000);
+    }else if(reachOutSubject===""){
+      $("h1#validInfo2").fadeIn(1000);
+      $("h1#validInfo2").fadeOut(1000);
+    } else if(reachOutMessage===""){
+      $("h1#validInfo3").fadeIn(1000);
+      $("h1#validInfo3").fadeOut(1000)
+    }else{
+      alert("We have received your message " + reachOutName + " . We will get in touch soon.");
+ 
+    }
+  }
+  validateCForm();
+  event.preventDefault();
+});
+  
+  
 // first trimester
             $("#first").click(function(){
                 $("#first").hide();
