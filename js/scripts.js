@@ -39,7 +39,7 @@ var inputtedAge;
 $("form#form1").submit(function(event){
     var inputtedFirstName = $("input#firstName").val();
     var inputtedLastName =$("input#lastName").val();
-    var inputtedEmail =$("input#email").val();
+    // var inputtedEmail =$("input#email").val();
     var inputtedDate=new Date($("input#date").val());
     var inputtedAge = $("input#age").val();
    
@@ -50,9 +50,9 @@ $("form#form1").submit(function(event){
             alert("Your age is below minimum [13]")
         }else if (inputtedAge >55) {
             alert("your age is above maximim [55]")
-        }else if (inputtedEmail ===""){
-            alert("please input your email")
-        }else{
+        // }else if (inputtedEmail ===""){
+        //     alert("please input your email")
+        // }else{
          return false;
         }
        
@@ -65,8 +65,11 @@ console.log(userFullName);
 color:;
 
 var inputtedMonth= inputtedDate.getMonth()+1;
+var inputtedYear=inputtedDate.getFullYear();
+
  var currentDate= new Date();
  var currentMonth= currentDate.getMonth()+1;
+ var currentYear=currentDate.getFullYear();
   var newMonthOfP= new MonthOfP(currentMonth,inputtedMonth);
   var pregnancyPeriod=newMonthOfP.getMonthOfPregnancy();
   var userGender=$("input[name='gender']:checked").val();
@@ -85,17 +88,20 @@ var inputtedMonth= inputtedDate.getMonth()+1;
  genderDetermine();
  function getSemester(){
    $("h1#userN").after("Dear "+ userFullName);
-  $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
-  if(pregnancyPeriod>=0 && pregnancyPeriod<=4){
+ 
+  if((pregnancyPeriod>=0 && pregnancyPeriod<=4)&&(currentYear===inputtedYear)){
+    $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
     $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  first semester " + " </span></li>");
     $(".firstTriCol").show();
-  }else if(pregnancyPeriod<=6 && pregnancyPeriod >4){
+  }else if((pregnancyPeriod<=6 && pregnancyPeriod >4)&&(currentYear===inputtedYear)){
+    $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
     $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  second Trimester " + " </span></li>");
     $(".secondTriCol").show();
-  }else if(pregnancyPeriod >6 && pregnancyPeriod <=9){
+  }else if((pregnancyPeriod >6 && pregnancyPeriod <=9)&&(currentYear===inputtedYear)){
+    $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
     $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  first semester  " + " </span></li>");
     $(".thirdTriCol").show();
-  }else if (pregnancyPeriod>9 && pregnancyPeriod<=12){
+  }else if (pregnancyPeriod<0 && currentYear!==inputtedYear){
     $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  fourth semester  " + " </span></li>");
     $(".fourthTriCol").show();
   } else {
