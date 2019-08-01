@@ -19,7 +19,7 @@ font-family: 'Lacquer';
     text-align: center;
     padding-top: 25%;
     font-family: 'Milonga', cursive;
-    color:green;  
+    color:rgb(44, 213, 243);  
 }
 .a h1{
     font-size: 130px;
@@ -28,7 +28,6 @@ font-family: 'Lacquer';
     padding-top:3%;
     font-size: 40px;
     padding-bottom:10%;
-    background-color: transparent;
 }
 #form1{
     padding-left: 100px;
@@ -50,4 +49,7 @@ font-family: 'Lacquer';
     .navbar {
         background-color: #4285F4;
     }
+}
+#first{
+    margin:auto;
 }
