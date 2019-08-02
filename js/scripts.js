@@ -92,7 +92,7 @@ var inputtedYear=inputtedDate.getFullYear();
  
   if((pregnancyPeriod>=0 && pregnancyPeriod<=3)&&(currentYear===inputtedYear)){
     $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
-    $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  first semester " + " </span></li>");
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  first Trimester " + " </span></li>");
     $(".firstTriCol").show();
   }else if((pregnancyPeriod<=6 && pregnancyPeriod >3)&&(currentYear===inputtedYear)){
     $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
@@ -100,10 +100,10 @@ var inputtedYear=inputtedDate.getFullYear();
     $(".secondTriCol").show();
   }else if((pregnancyPeriod >6 && pregnancyPeriod <=9)&&(currentYear===inputtedYear)){
     $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
-    $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  first semester  " + " </span></li>");
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  first Trimester  " + " </span></li>");
     $(".thirdTriCol").show();
   }else if (pregnancyPeriod<0 && currentYear!==inputtedYear){
-    $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  fourth semester  " + " </span></li>");
+    $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  fourth Trimester  " + " </span></li>");
     $(".fourthTriCol").show();
   } else {
     $("ul#userDetails").append("<li><span class='userInfo'>" +"If you've recoverd after delivary, you are good to go " + " </span></li>");
