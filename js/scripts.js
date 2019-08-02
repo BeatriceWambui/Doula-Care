@@ -127,10 +127,9 @@ var inputtedYear=inputtedDate.getFullYear();
               calculateBmi();
               function results(){
                 $("h1#userBMI").after("Your BMI Results");
-                if(calculateBmi() <19){
-               
+                if(calculateBmi() <19){             
                     
-                    $("ul#userDetails2").append("Your BMI is " + calculateBmi() +". "+"<br>"  + "We need to work on your weight, its really low.");
+                    $("ul#userDetails2").append("Your BMI is " + calculateBmi() +". "+"<br>"  + "We need to work on your , its really low.");
                 }else if(calculateBmi() >=26){
                   $("ul#userDetails2").append("Your BMI is " + calculateBmi() +". "+"<br>"  + "We need to work on your weight, its really high.");
                 }else{
@@ -143,7 +142,7 @@ var inputtedYear=inputtedDate.getFullYear();
 
 });
 //Validate contact form
-$('form#contact-form').submit(function(event){
+$('form#contactus').submit(function(event){
   
   var reachOutName= $("input#name").val();
   var reachOutSubject=$("input#subject").val();
@@ -176,11 +175,11 @@ $('form#contact-form').submit(function(event){
 // first trimester
             $("#first").click(function(){
                 $("#first").hide();
-                $(".firsTri").show();
+                $(".firstTri").show();
             });
-            $(".firsTri").click(function(){
+            $(".firstTri").click(function(){
                 $("#first").show(); 
-                $(".firsTri").hide();
+                $(".firstTri").hide();
                
             });
 //second trimester
@@ -188,9 +187,9 @@ $('form#contact-form').submit(function(event){
                 $("#second").hide();
                 $(". secondTri").show();
             });
-            $(".secondRow").click(function(){
+            $(".secondTri").click(function(){
                 $("#second").show();
-                $(".secondRow").hide();
+                $(".secondTri").hide();
                 
             });
 //third trimester
