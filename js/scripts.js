@@ -80,8 +80,7 @@ var inputtedYear=inputtedDate.getFullYear();
  function genderDetermine(){
    if(userGender==="male"){
     $("h1#userN").after("Dear "+ userFullName);
-    $("ul#userDetails").append("<li><span class='userInfo'>" + "Males don't get pregnant!");
-    $(".maleOutput").show();
+    $("ul#userDetails").append("<li><span class='userInfo'>" + "Males don't get pregnant!")
    }else{
      getSemester()
    }
@@ -90,11 +89,11 @@ var inputtedYear=inputtedDate.getFullYear();
  function getSemester(){
    $("h1#userN").after("Dear "+ userFullName);
  
-  if((pregnancyPeriod>=0 && pregnancyPeriod<=3)&&(currentYear===inputtedYear)){
+  if((pregnancyPeriod>=0 && pregnancyPeriod<=4)&&(currentYear===inputtedYear)){
     $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
     $("ul#userDetails").append("<li><span class='userInfo'>" +"Welcome to the  first semester " + " </span></li>");
     $(".firstTriCol").show();
-  }else if((pregnancyPeriod<=6 && pregnancyPeriod >3)&&(currentYear===inputtedYear)){
+  }else if((pregnancyPeriod<=6 && pregnancyPeriod >4)&&(currentYear===inputtedYear)){
     $("ul#userDetails").append("<li><span class='userInfo'>" + " Congratulations "+ "You are  " + pregnancyPeriod + " months pregnant" + " </span></li>");
     $("ul#userDetails").append("<li><span class='userInfo'>" +"You are on the  second Trimester " + " </span></li>");
     $(".secondTriCol").show();
@@ -107,7 +106,6 @@ var inputtedYear=inputtedDate.getFullYear();
     $(".fourthTriCol").show();
   } else {
     $("ul#userDetails").append("<li><span class='userInfo'>" +"If you've recoverd after delivary, you are good to go " + " </span></li>");
-    $(".fourthTriCol").show();
   }
  } 
     // getSemester();
@@ -126,18 +124,16 @@ var inputtedYear=inputtedDate.getFullYear();
              }
               calculateBmi();
               function results(){
-                $("h1#userBMI").after("Your BMI Results");
                 if(calculateBmi() <19){
-               
-                    
-                    $("ul#userDetails2").append("Your BMI is " + calculateBmi() +". "+"<br>"  + "We need to work on your weight, its really low.");
-                }else if(calculateBmi() >=26){
-                  $("ul#userDetails2").append("Your BMI is " + calculateBmi() +". "+"<br>"  + "We need to work on your weight, its really high.");
+
+                    alert("Your BMI is " + calculateBmi() +". " + "We need to work on your weight you are below minimum [58kgs]")
+                }else if(calculateBmi() >26){
+                    alert("Your BMI is " + calculateBmi() +". " + "We need to work on your weight. You are above maximum [90kgs]")
                 }else{
-                  $("ul#userDetails2").append("Your BMI is " + calculateBmi() +". "+"<br>" + "You have a well balanced weight");
-                }
+                    alert("Your BMI is " + calculateBmi() +". " + "Your have a well balanced weight");
+                };
                     //userDetails
-                }
+                };
                     results();
                     event.preventDefault(); 
 
