@@ -26,6 +26,13 @@ A website for Pre and Post Natal mums
 * welcome to Doula-care
 
 ## BDD
+* It allows the user input their information and are able to dertermine how many months they are        pregnant.
+* The give information about baby developmemt in the trimesters.
+* It give activities that a user should do to maintain a healthy body  and health child according to the trimster they    are in.
+* It has a form that the user should use to calculate their BMI.
+* It has a chart to help user determine their fertility period by a safe days chart.
+* It has images that help show the development period.
+* once the user has determined their months of pregnant they can also determine which trimester they are in.
 
 ## Technologies used
 * html

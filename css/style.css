@@ -2,14 +2,13 @@
  font-family: 'Milonga', cursive;
 }
 .logo{
-  width:300px;
+  width:200px;
   height: 200px;
   position: absolute;
   bottom:370px;
-  left:1060px;
+  left:500px;
   border-radius: 50%;
 }
-
 .a {
     background-image: url("../img/pregnant.jpg");
    
@@ -28,11 +27,6 @@
       width:100%;  
   }
 }
-h2{
-    color:green;
-}
-
-
 .a h1{
   font-size: 130px;
 }
@@ -55,7 +49,7 @@ h2{
 }
 
 .top-nav-collapse {
-  background-color: #4285F4;
+  background-color: #4285F4;  
 }
 
 @media only screen and (max-width: 768px) {
@@ -69,7 +63,7 @@ h2{
   .navbar {
       background-color: #4285F4;
   }
-}
+
 /* Day two max css */
 .row1 {
   padding-left: 25%;
@@ -84,8 +78,7 @@ h2{
   font-size: 20px; 
 }
 #form2{
-  padding-left: 20%;
-  padding-left: 30%;
+  padding-left:40%
 }
 h2{
   text-align: center;
@@ -131,11 +124,68 @@ font-family:"Poppins";
   margin-top: 20px;
 }
 .container-fluid {
-  width: 50%;
+  width: auto;
   height: auto;
 }
 .output2 {
-  width: 50%;
+  width: 80%;
   margin: auto;
   background: white;
+}
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+#fourth{
+ margin-left:200px;
+ height:400px;
+
+}
+#fourth-h{
+ margin-left:160px;
+
+}
+#second{
+ margin-left:100px;
+
+}
+#second-h{
+ margin-left:100px;
+}
+#aboutus{
+ font-family:"Milonga";
+ font-size:1.5em;
+}
+.service-heading{
+ font-family:"Milonga"
+}
+.everything{
+ font-family:"Milonga";
+}
+
+.output{
+ width:50%;
+ margin:auto;
+ background-color: blanchedalmond;
+}
+.userN{
+ font-size:28px;
+ color:rgba(63, 230, 152, 0.74);
+}
+#userDetails{
+ list-style-type: none;
+}
+/* .firstTri,.secondTri,.thirdTri,.fourthTri{
+ display:none;
+} */
+.output3{
+ background-color: blanchedalmond;
+ 
+
+}
+#validInfo,#validInfo1,#validInfo2,#validInfo3,#validInfo4{
+display:none;
+}
+/* .firstTriCol,.secondTriCol.thirdTriCol.fourthTriCol{
+  display:none;
+} */
+.firstTriCol,.secondTriCol,.thirdTriCol,.fourthTriCol,.maleOutput{
+  display:none;
 }
