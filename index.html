@@ -33,7 +33,7 @@
             <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#section2">About Us</a>
+            <a class="nav-link" href="#aboutus">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Services</a>
@@ -48,17 +48,6 @@
       <p>Wondering what to expect from the time you get pregnant?</p>
       <img class="logo" src="img/baby.logo.png">
     </div>
-
-    <div id="section2">
-      <div class="text-center" id="aboutus">
-        <h1>ABOUT US</h1>
-        <p>Most women have a problem coping up with life changes during and after <br>
-          pregnancy .The proposed application is aimed at helping Pre and Post natal <br>
-          mothers to monitor their babies growth throughout the whole trimester and a <br>
-          few months after.</p>
-      </div>
-    </div><br>
-
     <!-- Large input -->
     <h2>WELCOME FORM</h2>
     <form action="" id="form1">
@@ -68,18 +57,12 @@
       <label for="lastName">Last Name</label>
       <input class="form-control form-control-lg" type="text" placeholder="input your second name" id="lastName">
       <br><br>
-      <label for="genders"></label>
-      <div class="genderRadio">
-        <label for="mal"> <input type="radio" value="male" id="mal" name="gender"> Male</label>
-        <label for="femal"> <input type="radio" value="female" id="femal" name="gender"> Female</label>
-
-      </div>
       <!-- Material input -->
-      <!-- <div class="md-form">
-                  <i class="fas fa-user prefix"></i>
-                  <input type="email" id="inputIconEx2" class="form-control">
-                  <label for="inputIconEx2">E-mail address</label>
-                </div><br> -->
+      <div class="md-form">
+        <i class="fas fa-user prefix"></i>
+        <input type="email" id="inputIconEx2" class="form-control">
+        <label for="inputIconEx2">E-mail address</label>
+      </div><br>
       <label for="date">Date of pregnancy</label>
       <input type="date" placeholder="choose date" required id="date"><br><br>
       <label for="age">Age</label>
@@ -95,21 +78,29 @@
     </form>
 
 
-
+    <div id="section2">
+      <div class="text-center" id="aboutus">
+        <h1>ABOUT US</h1>
+        <p>Most women have a problem coping up with life changes during and after <br>
+          pregnancy .The proposed application is aimed at helping Pre and Post natal <br>
+          mothers to monitor their babies growth throughout the whole trimester and a <br>
+          few months after.</p>
+      </div>
+    </div>
 
     <div class="text-center" id="services">
-      <h1>SERVICES</h1>
+      <h1 class="service-heading">SERVICES</h1>
     </div>
     <div class="myfirst">
       <div class="row row1">
-        <figure>
+        <figure class="firstTriCol">
           <img src="img/firsttrimester.png" class="img-fluid" id="first" alt=""><br>
           <figcaption class="text-center" id="first-h"><strong>First Trimester</strong></figcaption>
         </figure>
       </div>
+      <h2 class="text-center">(1-3)months</h2>
       <div class="row firsTri">
         <div class="col-sm-4 firstTriCol">
-          <h2>(1-3)months</h2>
           <p><strong>signs & symptoms:</strong></p>
           <ul>
             <li>nausea and vomiting</li>
@@ -154,18 +145,17 @@
             <li>Learn the signs of a pregnancy problem</li>
           </ul>
         </div>
-      </div>
-
+      </div><br><br>
       <div class="mysecond">
         <div class="row row2">
-          <figure>
+          <figure class="secondTriCol">
             <img src="img/second trimester.jpg" id="second" class="img-fluid" alt="">
             <figcaption class="text-center" id="second-h"><strong>Second Trimester</strong></figcaption>
           </figure>
         </div>
+        <h2 class="text-center">(4-6)months</h2>
         <div class=" row secondTri">
           <div class="col-sm-4 secondTriCol">
-            <h2>(4-6)months</h2>
             <p><strong>signs & symptoms:</strong></p>
             <ul>
               <li>round ligament pains</li>
@@ -210,14 +200,14 @@
       </div>
       <div class="mythird">
         <div class="row row3">
-          <figure>
+          <figure class="thirdTriCol">
             <img src="img/thirdtrimester.jpg" id="third" class="img-fluid" alt="">
             <figcaption class="text-center" id="third-h"><strong>Third Trimester</strong></figcaption>
           </figure>
         </div>
+        <h2 class="text-center">(7-9)months</h2>
         <div class="row thirdTri">
           <div class="col-sm-4 thirdTriCol">
-            <h2>(7-9)months</h2>
             <p><strong>signs & symptoms:</strong></p>
             <ul>
               <li>strong kicks from the baby</li>
@@ -257,14 +247,14 @@
       </div>
       <div class="myfourth">
         <div class="row row4">
-          <figure>
-            <img src="img/fourthtrimester.jpg" id="fourth" class="img-fluid" alt="">
+          <figure class="">
+            <img src="img/fourthtrimester.jpg" id="fourth" class="img-fluid text-center" alt="">
             <figcaption id="fourth-h" class="text-center"><strong>Fourth Trimester</strong></figcaption>
           </figure>
         </div>
+        <h2 class="text-center">(The baby's first 3 months)</h2>
         <div class="row fourthTri">
           <div class="col-sm-6 fourthTriCol">
-            <h2>(The baby's first 3 months)</h2>
             <p><strong>signs & symptoms:</strong></p>
             <ul>
               <li>lochia</li>
@@ -287,6 +277,12 @@
         </div>
       </div>
       <!-- bmiform -->
+      <div class="text-center">
+        <figure class="maleOutput">
+          <img src="img/takingcare.jpg" id="care" alt="">
+          <figcaption id="taking-h">Share her excitement and help her prepare</figcaption>
+        </figure>
+      </div>
       <h2>BMI FORM</h2><br>
       <div class="row">
         <form action="" id="form2">
@@ -308,6 +304,17 @@
           <input type="submit" value="Calculate" id="calc"> <input type="reset" value="Reset">
         </form>
       </div><br><br>
+      <div class="add text-center">
+        <figure id="fertile">
+          <img src="img/fertile.jpg" alt="">
+        </figure><br>
+        <p class="text-center" id="fertile-h">Scientifically test and proven method of avoidance of pregnancy and among
+          the safest is the<br>
+          use of a safe period calculator. It will help you avoid pregnancy without having to jet into your<br>
+          system genetically made drugs or let’s just say chemicals. It has been in use since time<br>
+          immemorial and bears the lowest risk if well used. This is not to say that other methods are<br>
+          not good but this method is safe since it comes without side effects.</p>
+      </div><br>
 
       <!--Section: Contact v.2-->
       <section class="mb-4">
@@ -323,18 +330,12 @@
 
           <!--Grid column-->
           <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form">
-              <!-- to be deleted -->
-              <div class="output3">
-                <h1 id="validInfo">Please Enter you name</h1>
-                <h1 id="validInfo1">Please Enter your email</h1>
-                <h1 id="validInfo2">Please Enter your subject</h1>
-                <h1 id="validInfo3">Please Enter your message</h1>
+            <form id="contactus" name="contact-form" action="mail.php" method="POST" >
 
-
-              </div>
               <!--Grid row-->
               <div class="row">
+
+                
 
                 <!--Grid column-->
                 <div class="col-md-6">
@@ -383,14 +384,16 @@
 
                 </div>
               </div>
-              <!--Grid row-->
               <input type="submit">
             </form>
+              <!--Grid row-->
 
-            <!-- <div class="text-center text-md-left">
-            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-          </div>
-          <div class="status"></div> -->
+            </form>
+
+            <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
           </div>
           <!--Grid column-->
 
@@ -416,9 +419,35 @@
 
       </section>
       <!--Section: Contact v.2-->
+      <!-- </div> -->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1">
+          <a href="https://github.com/BeatriceWambui/Doula-care/tree/dev"><img src="img/github.svg" alt="github"
+              width="50px" height="45px;"></a>
+        </div>
+        <div class="col-sm-1">
+          <a href="https://twitter.com/home"><img src="img/twitter.png" alt="twitter"></a>
+
+        </div>
+        <div class="col-sm-1">
+          <a href="https://www.uplabs.com/posts/behance-login-signup"><img src="img/behance.png" alt="behance"></a>
+        </div>
+        <div class="col-sm-1">
+          <a href="https://www.facebook.com"><img src="img/facebook.png" alt="facebook"></a>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>
+      </section>
+      <!--Section: Contact v.2-->
     </div>
   </div>
-
+   
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -429,6 +458,8 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+</div>
+
 </body>
 
 </html>
