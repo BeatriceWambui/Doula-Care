@@ -56,10 +56,16 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+#first{
+    margin:auto;
+}
   .navbar {
       background-color: #4285F4;
   }
-}
 /* Day two max css */
 .row1 {
   padding-left: 25%;
@@ -121,7 +127,6 @@ font-family:"Poppins";
   margin-top: 20px;
 }
 .container-fluid {
-  width: 50%;
   height: auto;
 }
 .output2 {
