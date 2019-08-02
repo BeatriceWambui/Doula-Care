@@ -101,3 +101,26 @@ font-weight:bold;
 .text-center{
 font-family:"Poppins";
 }
+/* to be deleted */
+.output,.output2{
+  width:50%;
+  margin:auto;
+  background-color:white;
+}
+.userN{
+  font-size:28px;
+  color:rgba(63, 230, 152, 0.74); 
+}
+#userDetails{
+  list-style-type: none;
+}
+.firstTriCol,.secondTriCol,.thirdTriCol,.fourthTriCol{
+  display:none;
+}
+.output3{
+  background-color: blanchedalmond
+  
+}
+#validInfo,#validInfo1,#validInfo2,#validInfo3,#validInfo4{
+display:none;
+}
